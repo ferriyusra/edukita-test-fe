@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaFacebook, FaTwitter } from 'react-icons/fa6'
+import { FaFacebook, FaTwitter, FaHeart } from 'react-icons/fa6'
 
 const LandingPageLayoutFooter = () => {
   return (
@@ -8,11 +8,8 @@ const LandingPageLayoutFooter = () => {
       <div className="max-w-7xl w-full mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="flex-shrink-0">
-            <Image
-              src="/images/general/logo.png"
-              alt="Logo"
-              width={200}
-              height={100}
+            <FaHeart
+              size={100}
             />
           </div>
 

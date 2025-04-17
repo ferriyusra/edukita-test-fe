@@ -23,6 +23,7 @@ import { signOut, useSession } from "next-auth/react";
 import useLandingPageLayoutNavbar from "./useLandingPageLayoutNavbar";
 import { Fragment, useState } from "react";
 import Image from "next/image";
+import { FaHeart } from "react-icons/fa6";
 
 const LandingPageLayoutNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,12 +38,9 @@ const LandingPageLayoutNavbar = () => {
     <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="bg-white">
       <NavbarBrand>
         <Link href="/">
-          <Image
-            src="/images/general/logo.svg"
-            alt="logo"
-            width={100}
-            height={50}
-            className="cursor-pointer"
+          <FaHeart
+            color="#006a65"
+            size={40}
           />
         </Link>
       </NavbarBrand>

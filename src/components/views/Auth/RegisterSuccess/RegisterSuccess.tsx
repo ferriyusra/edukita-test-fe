@@ -1,16 +1,14 @@
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import router, { useRouter } from "next/router";
+import { FaHeart } from "react-icons/fa6";
 const RegisterSuccess = () => {
   const router = useRouter();
   return (
     <div className="flex w-screen flex-col items-center justify-center gap-10 p-4">
       <div className="flex flex-col items-center justify-center gap-10">
-        <Image
-          src="/images/general/logo.svg"
-          alt="logo"
-          width={180}
-          height={180}
+        <FaHeart
+          size={40}
         />
         <Image
           src="/images/illustrations/email-send.svg"
